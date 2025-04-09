@@ -30,13 +30,15 @@
         {
             dtgvCarrera = new DataGridView();
             btnConect = new Button();
+            dtgvAlumnos = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dtgvCarrera).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvAlumnos).BeginInit();
             SuspendLayout();
             // 
             // dtgvCarrera
             // 
             dtgvCarrera.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgvCarrera.Location = new Point(245, 130);
+            dtgvCarrera.Location = new Point(44, 127);
             dtgvCarrera.Name = "dtgvCarrera";
             dtgvCarrera.RowHeadersWidth = 62;
             dtgvCarrera.Size = new Size(518, 290);
@@ -52,16 +54,27 @@
             btnConect.UseVisualStyleBackColor = true;
             btnConect.Click += btnConect_Click;
             // 
+            // dtgvAlumnos
+            // 
+            dtgvAlumnos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgvAlumnos.Location = new Point(600, 127);
+            dtgvAlumnos.Name = "dtgvAlumnos";
+            dtgvAlumnos.RowHeadersWidth = 62;
+            dtgvAlumnos.Size = new Size(518, 290);
+            dtgvAlumnos.TabIndex = 3;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1278, 450);
+            Controls.Add(dtgvAlumnos);
             Controls.Add(btnConect);
             Controls.Add(dtgvCarrera);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dtgvCarrera).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvAlumnos).EndInit();
             ResumeLayout(false);
         }
 
@@ -69,5 +82,6 @@
 
         private DataGridView dtgvCarrera;
         private Button btnConect;
+        private DataGridView dtgvAlumnos;
     }
 }
